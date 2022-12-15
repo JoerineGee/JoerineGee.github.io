@@ -1,6 +1,14 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
+  /* #30516a */
+  /* #fecc47 */
+
+  :root {
+  --primary-color: #30516a;
+}
+
 body {
   color: #797979;
   background: #ffffff;
@@ -24,7 +32,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ef233c;
+  color: var(--primary-color);
   outline: none;
   text-decoration: none;
 }
@@ -44,20 +52,20 @@ a:focus {
   font-weight: 600;
   letter-spacing: 1px;
   color: #ffffff;
-  background: #ef233c;
+  background: var(--primary-color);
   border: 2px solid transparent;
   border-radius: 0;
-  box-shadow: inset 0 0 0 50px #ef233c;
+  box-shadow: inset 0 0 0 50px var(--primary-color);
   transition: ease-out 0.3s;
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-  color: #ef233c;
+  color: var(--primary-color);
   background: transparent;
-  box-shadow: inset 0 0 0 0 #ef233c;
-  border-color: #ef233c;
+  box-shadow: inset 0 0 0 0 var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 #loader {
@@ -91,7 +99,7 @@ a:focus {
   width: 45px;
   height: 45px;
   border: 5px solid #dddddd;
-  border-top: 5px solid #ef233c;
+  border-top: 5px solid var(--primary-color);
   border-radius: 50%;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
@@ -195,8 +203,7 @@ a:focus {
   }
 
   .navbar.nav-sticky .navbar-brand {
-    color: #ef233c;
-    /* color: #EF233C; */
+    color: var(--primary-color);
   }
 
   .navbar-light .navbar-nav .nav-link,
@@ -221,7 +228,7 @@ a:focus {
 
   .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
   .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-    color: #ef233c;
+    color: var(--primary-color);
   }
 }
 
@@ -232,7 +239,7 @@ a:focus {
   }
 
   .navbar .navbar-brand {
-    color: #ef233c;
+    color: var(--primary-color);
   }
 
   .navbar .navbar-nav {
@@ -257,7 +264,7 @@ a:focus {
   margin-bottom: 45px;
   padding: 120px 0 0 0;
   overflow: hidden;
-  background: linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)),
+  background: linear-gradient(rgba(48, 81, 106, 0.95), rgba(48, 81, 106, 0.95)),
     url(../img/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -324,7 +331,7 @@ a:focus {
 
 .hero .hero-btn .btn {
   margin-top: 35px;
-  color: #ef233c;
+  color: var(--primary-color);
   background: #ffffff;
   box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -448,7 +455,7 @@ a:focus {
   top: 11px;
   right: 0;
   left: -30px;
-  background: #ef233c;
+  background: var(--primary-color);
   z-index: -1;
 }
 
@@ -459,7 +466,7 @@ a:focus {
   height: 3px;
   top: 11px;
   left: 3px;
-  background: #ef233c;
+  background: var(--primary-color);
   z-index: 1;
 }
 
@@ -540,7 +547,7 @@ a:focus {
 
 .about .progress .progress-bar {
   width: 0px;
-  background: #ef233c;
+  background: var(--primary-color);
   border-radius: 10px;
   transition: 2s;
 }
@@ -574,7 +581,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-  box-shadow: inset 800px 0 0 0 #ef233c;
+  box-shadow: inset 800px 0 0 0 var(--primary-color);
 }
 
 .service .service-icon {
@@ -584,14 +591,14 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ef233c;
+  border: 1px solid var(--primary-color);
   background: #ffffff;
 }
 
 .service .service-icon i {
   position: relative;
   font-size: 60px;
-  color: #ef233c;
+  color: var(--primary-color);
   transition: 0.3s;
 }
 
@@ -640,7 +647,7 @@ a:focus {
 .footer {
   position: relative;
   margin-top: 45px;
-  background: #ef233c;
+  background: var(--primary-color);
 }
 
 .footer .container-fluid {
